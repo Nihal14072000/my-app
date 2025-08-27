@@ -1,0 +1,59 @@
+.fade-in {
+  animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated-title {
+  animation: slideDown 1s;
+  font-weight: 700;
+  color: #1a2a6c;
+  letter-spacing: 1px;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated-card {
+  box-shadow: 0 8px 32px rgba(26,42,108,0.10);
+  border-radius: 18px;
+  animation: cardPop 0.8s;
+}
+.card {
+  box-shadow: 0 8px 32px rgba(26,42,108,0.15);
+  border-radius: 18px;
+}
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  animation: listFade 1s;
+}
+.contact-list i {
+  color: #17a2b8;
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+.contact-link {
+  color: #1a2a6c;
+  text-decoration: underline;
+  transition: color 0.2s, font-weight 0.2s;
+}
+.contact-link:hover {
+  color: #b21f1f !important;
+  text-decoration: none;
+  font-weight: 600;
+}
+@keyframes listFade {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}

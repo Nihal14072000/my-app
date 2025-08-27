@@ -1,0 +1,30 @@
+.fade-in {
+  animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated-title {
+  animation: slideDown 1s;
+  font-weight: 700;
+  color: #1a2a6c;
+  letter-spacing: 1px;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated-card {
+  box-shadow: 0 8px 32px rgba(26,42,108,0.10);
+  border-radius: 18px;
+  animation: cardPop 0.8s;
+}
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.card {
+  box-shadow: 0 8px 32px rgba(26,42,108,0.15);
+  border-radius: 18px;
+}

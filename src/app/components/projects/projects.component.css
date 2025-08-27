@@ -1,0 +1,95 @@
+.projects-section .card {
+    height: 100%;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(26,42,108,0.15);
+}
+
+.projects-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(23, 162, 184, 0.2);
+}
+
+.projects-section h4 {
+    color: #17a2b8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.badge {
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.bg-primary {
+    background: linear-gradient(45deg, #007bff, #00bcd4) !important;
+}
+
+.bg-success {
+    background: linear-gradient(45deg, #28a745, #20c997) !important;
+}
+
+.bg-info {
+    background: linear-gradient(45deg, #17a2b8, #4dc0b5) !important;
+}
+
+.bg-secondary {
+    background: linear-gradient(45deg, #6c757d, #868e96) !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated-title {
+  animation: slideDown 1s;
+  font-weight: 700;
+  color: #1a2a6c;
+  letter-spacing: 1px;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animated-card {
+  box-shadow: 0 8px 32px rgba(26,42,108,0.10);
+  border-radius: 18px;
+  animation: cardPop 0.8s;
+}
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animated-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  animation: listFade 1s;
+}
+.animated-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #17a2b8;
+  font-size: 1.1em;
+}
+@keyframes listFade {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}

@@ -1,0 +1,25 @@
+.footer-section {
+  background: linear-gradient(90deg, #1a2a6c 0%, #b21f1f 100%);
+  color: #fff;
+  box-shadow: 0 -4px 16px rgba(26,42,108,0.10);
+  border-radius: 0;
+  margin-top: 3rem;
+}
+.footer-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.footer-contact-link {
+  color: #fdbb2d;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s, font-weight 0.2s;
+}
+.footer-contact-link:hover {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.footer-contact-link i {
+  margin-right: 6px;
+}

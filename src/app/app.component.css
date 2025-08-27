@@ -1,0 +1,17 @@
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link.active {
+  color: #17a2b8 !important;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
