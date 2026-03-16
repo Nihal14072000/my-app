@@ -21,8 +21,10 @@
   animation: cardPop 0.8s;
 }
 .card {
-  box-shadow: 0 8px 32px rgba(26,42,108,0.15);
+  box-shadow: 0 8px 32px var(--card-shadow);
   border-radius: 18px;
+  background: var(--card-bg);
+  color: var(--text-primary);
 }
 @keyframes cardPop {
   from { opacity: 0; transform: scale(0.95); }

@@ -41,7 +41,9 @@
 }
 
 .card-body {
-    padding: 1.5rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  color: var(--text-primary);
 }
 
 .text-muted {

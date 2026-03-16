@@ -34,28 +34,30 @@
 }
 
 .skill-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #343a40;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 .card {
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(26,42,108,0.15);
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px var(--card-shadow);
+  background: var(--card-bg);
+  color: var(--text-primary);
 }
 
 .card-header {
-    border-radius: 15px 15px 0 0 !important;
-    background-color: #f8f9fa;
-    border-bottom: 2px solid #17a2b8;
+  border-radius: 15px 15px 0 0 !important;
+  background-color: var(--card-bg);
+  border-bottom: 2px solid var(--accent);
 }
 
 .card-header h4 {
-    margin: 0;
-    color: #17a2b8;
-    font-weight: 600;
+  margin: 0;
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .fade-in {

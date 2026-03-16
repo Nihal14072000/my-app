@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ThemeService, Theme } from './services/theme.service';
+import { Subscription } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
@@ -28,7 +30,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   template: `
-    <div class="container-fluid">
+    <div class="container-fluid" [attr.data-theme]="theme">
       <app-header></app-header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -67,6 +69,20 @@ import { FooterComponent } from './components/footer/footer.component';
   `,
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'Full Stack Java Developer Portfolio';
+  theme: Theme = 'light';
+  private themeSub?: Subscription;
+
+  constructor(private themeService: ThemeService) {}
+
+  ngOnInit() {
+    this.themeSub = this.themeService.theme$.subscribe(theme => {
+      this.theme = theme;
+    });
+  }
+
+  ngOnDestroy() {
+    this.themeSub?.unsubscribe();
+  }
 }

@@ -1,25 +1,62 @@
 /* Global Styles */
 @import 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+  --bg-primary: #f8f9fa;
+  --text-primary: #343a40;
+  --accent: #17a2b8;
+  --header-gradient-start: #1a2a6c;
+  --header-gradient-mid: #b21f1f;
+  --header-gradient-end: #fdbb2d;
+  --navbar-bg: #212529;
+  --card-bg: #f8f9fa;
+  --card-shadow: rgba(0,0,0,0.1);
+  --card-shadow-hover: rgba(0,0,0,0.15);
+  --progress-bar: #17a2b8;
+  --text-muted: #6c757d;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --text-primary: #f0f0f0;
+  --accent: #00d4ff;
+  --header-gradient-start: #232526;
+  --header-gradient-mid: #414345;
+  --header-gradient-end: #232526;
+  --navbar-bg: #0d0d0d;
+  --card-bg: #232526;
+  --card-shadow: rgba(0,0,0,0.4);
+  --card-shadow-hover: rgba(0,0,0,0.6);
+  --progress-bar: #00d4ff;
+  --text-muted: #b0b0b0;
+}
+@import 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 body {
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   font-family: 'Poppins', sans-serif;
 }
 
+
 .card {
   border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: var(--card-bg);
+  box-shadow: 0 4px 6px var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px var(--card-shadow-hover);
 }
 
+
 .card-header {
-  background-color: #f8f9fa;
+  background-color: var(--card-bg);
   border-bottom: none;
 }
 
@@ -28,8 +65,9 @@ body {
   margin-bottom: 15px;
 }
 
+
 .progress-bar {
-  background-color: #17a2b8;
+  background-color: var(--progress-bar);
 }
 
 .skill-item {
@@ -46,18 +84,21 @@ body {
   padding: 0.5em 1em;
 }
 
+
 h2 {
-  color: #343a40;
-  border-bottom: 2px solid #17a2b8;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
+
 .text-muted {
-  color: #6c757d !important;
+  color: var(--text-muted) !important;
 }
+
 
 .contact-section .bi {
   margin-right: 10px;
-  color: #17a2b8;
+  color: var(--accent);
 }

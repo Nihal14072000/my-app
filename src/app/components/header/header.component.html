@@ -11,4 +11,10 @@
       <span><i class="bi bi-linkedin"></i> <a href="https://linkedin.com/in/nehal-kagwadkar" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/nehal-kagwadkar</a></span>
     </div>
   </div>
+  <div class="theme-toggle d-flex justify-content-center mt-3">
+    <button (click)="toggleTheme()" class="btn btn-outline-secondary" [attr.aria-label]="theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'">
+      <i class="bi" [ngClass]="theme === 'dark' ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
+      <span class="ms-2">{{ theme === 'dark' ? 'Light' : 'Dark' }} Mode</span>
+    </button>
+  </div>
 </header>
